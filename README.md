@@ -39,3 +39,10 @@ Make sure you have Python 3.8+ installed. Install the required dependencies usin
 
 ```bash
 pip install -r request.txt
+
+Running the SimulationsBoth scripts are highly optimized to process up to 100,000,000 agents using batch processing to prevent memory crashes. The initial states are completely randomized to eliminate initial-value dependency.Bash# Run Experiment A
+python mainA.py
+
+# Run Experiment B
+python mainB.py
+OutputsUpon completion, the scripts will generate:summary_results.csv / summary_expB_comprehensive.csv: Contains the final fragmentation metrics and standard errors across all $N$ scales.history_N_*.csv: Time-series data of conformity and defect states for each scale.simulation_plots.png / comprehensive_pseudo_scapegoat_plots.png: High-resolution visualizations of the hysteresis, topological penalty, and LLN convergence.A compressed .zip file containing all outputs for easy downloading.📜 LicenseThis project is open-source. Researchers, data scientists, and policy-makers are encouraged to use these algorithms to audit platforms and advocate for better informational health diagnostics.
